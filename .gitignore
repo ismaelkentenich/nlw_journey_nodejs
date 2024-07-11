@@ -1,41 +1,62 @@
-lib-cov
-*.seed
+# Logs and Temporary Files
+logs/
 *.log
+*.seed
 *.csv
 *.dat
 *.out
 *.pid
 *.gz
 *.swp
+tmp/
+pids/
+results/
 
-pids
-logs
-results
-tmp
-
-# Build
-public/css/main.css
-
-# Coverage reports
-coverage
-
-# API keys and secrets
-.env
-
-# Dependency directory
-node_modules
-bower_components
-
-# Editors
-.idea
-*.iml
-
-# OS metadata
+# OS Metadata
 .DS_Store
 Thumbs.db
 
-# Ignore built ts files
-dist/**/*
+# Dependency Directories
+node_modules/
+bower_components/
+vendor/
 
-# ignore yarn.lock
+# API Keys and Secrets
+.env
+*.env*
+
+# Compiled Output
+dist/
+public/css/main.css
+
+# Coverage Reports
+coverage/
+
+# Yarn and NPM Lock Files
 yarn.lock
+yarn-error.log
+package-lock.json
+
+# IDE and Editor Files
+.idea/
+*.iml
+.vscode/
+
+# Experimental and Database Files
+experimental/**/*.db
+dev.db
+
+# Framework and Library Specific
+.next/
+.nuxt/
+flow-typed/
+
+# Temporary Resolvers
+tmp-resolvers/
+
+# Prisma Migrations
+prisma/migrations/
+javascript/**/migrations/
+typescript/**/migrations/
+misc/**/migrations/
+databases/**/migrations/
